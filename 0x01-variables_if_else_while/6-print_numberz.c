@@ -11,7 +11,7 @@ int main(void)
 
 	for (singledgt = 0; singledgt < 10; singledgt++)
 		putchar((singledgt % 10) + '0');
-	
+
 	putchar('\n');
 
 	return (0);

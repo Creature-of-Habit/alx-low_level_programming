@@ -12,8 +12,6 @@ int main(void)
 
 	for (singledgt = 0; singledgt < 10; singledgt++)
 		printf("%d", singledgt);
-	
 	printf("\n");
-
 	return (0);
 }
