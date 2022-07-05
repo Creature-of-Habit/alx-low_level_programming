@@ -8,18 +8,12 @@
  */
 int main(void)
 {
-	char x;
-	char y;
+	int singledgt;
 
-	for (x = 'a'; x <= 'z'; x++)
-	{
-		putchar(x);
-	}
+	for (singledgt = 0; singledgt < 10; singledgt++)
+		printf("%d", singledgt);
+	
+	printf("\n");
 
-	for (y = 'A'; y <= 'Z'; y++)
-	{
-		putchar(y);
-	}
-	putchar('\n');
 	return (0);
 }

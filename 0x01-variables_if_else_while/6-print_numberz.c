@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main -Entry point
@@ -8,14 +7,12 @@
  */
 int main(void)
 {
-	char x;
+	int singledgt;
 
-	for (x = 'a'; x <= 'z'; x++)
-	{
-		if (x == 'q' || x == 'e')
-			continue;
-		putchar(x);
-	}
+	for (singledgt = 0; singledgt < 10; singledgt++)
+		putchar((singledgt % 10) + '0');
+	
 	putchar('\n');
+
 	return (0);
 }

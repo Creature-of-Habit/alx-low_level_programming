@@ -8,18 +8,20 @@
  */
 int main(void)
 {
-	char x;
-	char y;
+	int i;
 
-	for (x = 'a'; x <= 'z'; x++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(x);
-	}
-
-	for (y = 'A'; y <= 'Z'; y++)
-	{
-		putchar(y);
+		putchar((i % 10) + '0');
+		if (i >= 0 && i <9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		else
+			continue;
 	}
 	putchar('\n');
+
 	return (0);
 }
