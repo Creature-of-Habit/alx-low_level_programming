@@ -9,8 +9,16 @@
 
 int _abs(int a)
 {
-	unsigned int _a;
-	_a = a;
-
-	return (_a);
+	int result;
+	
+	if (a < 0)
+	{
+		result = a * -1;
+	}
+	else
+	{
+		result = a;
+	}
+	
+	return (result);
 }
