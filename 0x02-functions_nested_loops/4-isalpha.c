@@ -9,14 +9,12 @@
 
 int _islower(int c)
 {
-	int result = 0;
-	char lower;
-	char upper;
+	int result;
 
-	for (lower = 'a', upper = 'A'; lower <= 'z', upper <= 'Z'; lower++, upper++)
-	{
-		if ((lower == c) || (upper == c))
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		result = 1;
-	}
+	else
+		result = 0;
+
 	return (result);
 }
