@@ -4,13 +4,13 @@
  * _abs - computes absolute value of an integer
  * @a: value to be computed
  *
- * Return: absolute value of integer 
+ * Return: absolute value of integer
  */
 
 int _abs(int a)
 {
 	int result;
-	
+
 	if (a < 0)
 	{
 		result = a * -1;
@@ -19,6 +19,6 @@ int _abs(int a)
 	{
 		result = a;
 	}
-	
+
 	return (result);
 }
