@@ -10,13 +10,7 @@
 int _abs(int a)
 {
 	unsigned int _a;
-	if (a < 0)
-	{
-		_a = (unsigned int) a;
-		return (_a);
-	}
-	else
-	{
-		return(a);
-	}
+	_a = (unsigned int) _a;
+
+	return (_a);
 }
