@@ -9,8 +9,8 @@
 
 int _islower(int c)
 {
-	int result;
-	char lower = 0;
+	int result = 0;
+	char lower;
 
 	for (lower = 'a'; lower <= 'z'; lower++)
 	{
