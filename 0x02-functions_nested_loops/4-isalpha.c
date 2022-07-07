@@ -7,7 +7,7 @@
  * Return: 1 if  character is an alphabet. 0 otherwise
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	int result;
 
