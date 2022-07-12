@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * put2 - prints every other char of a string starting with the first
+ * puts2 - prints every other char of a string starting with the first
  * followed by a new line.
  * @str: pointer with address of string to be computed
  *
  */
 
-void put2(char *str)
+void puts2(char *str)
 {
 	int len = 0;
 
