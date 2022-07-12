@@ -9,7 +9,8 @@
 
 void swap_int(int *a, int *b)
 {
-	int arr[2] = {*a, *b};
-	*a = arr[1];
-	*b = arr[0];
+	int c = *a;
+	int d = *b;
+	*a = d;
+	*b = c;
 }
