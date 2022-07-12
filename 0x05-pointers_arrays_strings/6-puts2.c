@@ -9,8 +9,6 @@
 
 void put2(char *str)
 {
-	int i;
-
 	int len = 0;
 
 	while (1)
