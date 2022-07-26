@@ -24,12 +24,11 @@ char *create_array(unsigned int size, char c)
 	arr = malloc(size * sizeof(char));
 	i = 0;
 
-	while (i < ((int)size - 1))
+	while (i < (int)size)
 	{
 		arr[i] = c;
 		i++;
 	}
-	arr[i] = '\0';
+
 	return (arr);
-	free(arr);
 }
