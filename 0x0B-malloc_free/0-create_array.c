@@ -21,15 +21,15 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	arr = malloc((size + 1) * sizeof(char));
+	arr = malloc(size * sizeof(char));
 	i = 0;
 
-	while (i < (int)size)
+	while (i < ((int)size - 1))
 	{
 		arr[i] = c;
 		i++;
 	}
-	arr[i] = '0';
+	arr[i] = '\0';
 	return (arr);
 	free(arr);
 }
