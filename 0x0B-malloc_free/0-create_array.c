@@ -23,7 +23,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	arr = malloc (len * sizeof(char));
+	arr = malloc(len * sizeof(char));
 	i = 0;
 
 	while (i < len)
@@ -32,6 +32,6 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 	arr[i] = '0';
+	return (arr);
 	free(arr);
-	return(arr);
 }
