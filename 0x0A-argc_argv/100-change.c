@@ -9,7 +9,7 @@
  * Return: 1 if argc is not exactly 1, 0 if negative
  * 0 otherwise
  */
- 
+
 int main(int argc, char *argv[])
 {
 	int cents, coins = 0;
