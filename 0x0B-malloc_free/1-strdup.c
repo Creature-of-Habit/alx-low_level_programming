@@ -13,14 +13,14 @@
 
 char *_strdup(char *str)
 {
+	char *msp;
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	char *msp;
 	int len = 0;
 
-	while (str != '\0')
+	while (*str != '\0')
 	{
 		len++;
 		*++str;
@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	if (msp == NULL)
 		return (NULL);
 
-	while (str != '\0')
+	while (*str != '\0')
 	{
 		*msp = *str;
 		*++msp;
