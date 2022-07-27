@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -19,7 +21,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	while (str[len] || str[len])
+	while (str[len] != '\0' || str[len] != '\0')
 		len++;
 	strcat = malloc(len * sizeof(char));
 
