@@ -11,5 +11,30 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	char *strcat;
+	int i, j, len = 0;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	while (str[len] || str[len])
+		len++;
+	strcat = malloc(len * sizeof(char));
+
+	if (strcat == NULL)
+		return (NULL);
+
+	while (s1[i] != '\0')
+	{
+		strcat[i] = s1[i];
+		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		strcat[i++] = s2[j];
+	}
+
+	return (strcat);
 }
