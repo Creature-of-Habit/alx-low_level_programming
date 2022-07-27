@@ -22,15 +22,15 @@ char *argstostr(int ac, char **av)
 			size++;
 	}
 	New_str = malloc((size + 1) * sizeof(char));
-	if (str == NULL)
+	if (New_str == NULL)
 		return (NULL);
 	index = 0;
 	for (arg = 0; arg < ac; arg++)
 	{
 		for (byte = 0; av[arg][byte]; byte++)
-			str[index++] = av[arg][byte];
-		str[index++] = '\n';
+			New_str[index++] = av[arg][byte];
+		New_str[index++] = '\n';
 	}
-	str[size] = '\0';
-	return (str);
+	New_str[size] = '\0';
+	return (New_str);
 }
