@@ -14,27 +14,27 @@
 char *_strdup(char *str)
 {
 	char *msp;
+	int len = 0;
+	int i = 0;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	int len = 0;
 
-	while (*str != '\0')
+	while (str[len] != '\0')
 	{
 		len++;
-		*++str;
 	}
 	msp = malloc((len + 1) * sizeof(char));
 
 	if (msp == NULL)
 		return (NULL);
 
-	while (*str != '\0')
+	while (str[i] != '\0')
 	{
-		*msp = *str;
-		*++msp;
-		*++str;
+		msp[i] = str[i];
+		i++;
 	}
 	msp[len] = '\0';
 
