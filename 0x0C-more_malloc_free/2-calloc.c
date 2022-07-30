@@ -17,13 +17,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if ((nmemb == 0) || (size == 0))
 		return (NULL);
 
-	a_sz = nmemb * sizeof(char);
+	a_sz = nmemb * size;
 	mryspc = malloc(a_sz);
 	
 	if (mryspc == NULL)
 		return (NULL);
 
-	while (i < nmemb)
+	while (i < a_sz)
 	{
 		mryspc[i] = 0;
 		i++;
