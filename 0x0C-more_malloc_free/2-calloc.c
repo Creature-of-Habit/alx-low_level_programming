@@ -23,6 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	while (i < nmemb)
 	{
 		mryspc[i] = 0;
+		i++;
 	}
 
 	return (mryspc);
