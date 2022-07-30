@@ -30,9 +30,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else 
 		len = i + n;
 
-	mryspc = malloc(sizeof(*mryspc) * (len + 1));
+	mryspc = malloc(sizeof(char) * (len + 1));
 	if (mryspc == NULL)
-		re7turn(NULL);
+		return(NULL);
 	for (k = 0; k <= i; k++)
 		mryspc[k] = s1[k];
 	for (k = 0; k < n; k++)
