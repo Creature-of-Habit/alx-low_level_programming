@@ -6,7 +6,6 @@
  * @nmemb: elements of the array
  * @size: bytes of the elements
  *
- * Renturn: pointer to the allocated mmemory
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -19,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	a_sz = nmemb * size;
 	mryspc = malloc(a_sz);
-	
+
 	if (mryspc == NULL)
 		return (NULL);
 
