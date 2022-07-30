@@ -6,6 +6,7 @@
  * @nmemb: elements of the array
  * @size: bytes of the elements
  *
+ * Return: pointer to allocated memory space
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
