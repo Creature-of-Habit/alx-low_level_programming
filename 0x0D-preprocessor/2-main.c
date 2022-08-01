@@ -14,5 +14,5 @@ int main(int ac UNUSED, char *av)
 {
 	printf("%s\n", av[0]);
 
-	Return (0);
+	return (0);
 }
