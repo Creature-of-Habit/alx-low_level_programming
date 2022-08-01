@@ -8,7 +8,7 @@
  * Return: Always 0 (Sucess)
  */
 
-int main(int argc, char *argv[])
+int main(void)
 {
 	printf("%s\n", __FILE__);
 
