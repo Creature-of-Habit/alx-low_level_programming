@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include <stddlib.h>
+#include <stdlib.h>
 
 /**
  * print_numbers - prints numbers 
