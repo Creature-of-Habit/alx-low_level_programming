@@ -14,6 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	int i = 0;
 	int num_args = n;
 	va_list args;
+
 	va_start(args, n);
 
 	if (separator == NULL)
@@ -27,6 +28,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (i < num_args)
 	{
 		char *c = va_arg(args, char *);
+		
 		if (c == NULL)
 			c = "(nil)";
 		if (i == (num_args - 1))
