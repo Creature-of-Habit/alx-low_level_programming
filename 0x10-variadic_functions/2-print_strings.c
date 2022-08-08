@@ -24,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		return;
 	}
 
-	while (i++ < num_args)
+	while (i < num_args)
 	{
 		char *c = va_arg(args, char *);
 		if (c == NULL)
@@ -38,6 +38,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", c);
 			printf("%s", separator);
 		}
+		i++;
 	}
 
 	printf("\n");
