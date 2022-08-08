@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_numbers - prints numbers 
+ * print_numbers - prints numbers
  * @separator: string that separates the numbers
  * @n: number of variable arguments passed
  *
@@ -32,5 +32,4 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	printf("%d", va_arg(args, int));
 	va_end(args);
 	printf("\n");
-
 }
